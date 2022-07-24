@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    background-image: url(/images/bogBack2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: #FAF9F6;
+}
+
+#page {
+    background-color: #FAF9F6;
+
+    
+}
+
+@media(max-width: 320px) {
+
+
+}
+
+@media(min-width: 901px) {
+
+
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+
+    
+}
