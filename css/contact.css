@@ -1,0 +1,303 @@
+:root {
+    --primary: #Bc3Bff;
+    --light:#EEEEEE;
+    --dark:#212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
+    border-bottom: 3px solid var(--primary);
+    height: 65px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    color: var(--dark);
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h3 {
+    padding-bottom: 10px;
+}
+
+blockquote {
+    color: var(--primary)
+}
+
+footer {
+    background-color: var(--light);
+    padding-left: 10px;
+    padding-bottom: 35px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -16px;
+}
+
+.menu a {
+    color: #FFF;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+
+.menu a.is-active, .menu a:hover {
+    background-color: var(--primary);
+}
+
+#noThanks {
+    justify-content: center;
+    display: flex;
+}
+
+#noThanksImage {
+    justify-content: center;
+    display: flex;
+    padding-left: 240px;
+}
+
+#bogs {
+    color: var(--primary);
+}
+
+#page {
+    padding-top: 100px;
+    padding-left: 75px;
+    
+}
+
+#grid {
+    background-color: var(--light);
+    display: flex;
+    width: auto;
+    margin: auto;
+    border: none;
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+
+@media(max-width: 280px) {
+
+    #page {
+        padding-right: 10px;
+    }
+
+    .menu a,
+    p,
+    h2,
+    #homeImage {
+        padding-right: 10px;
+    }
+
+} 
+
+@media(min-width: 320px) and (max-width: 389px) {
+
+    #page {
+        padding-right: 10px;
+    }
+
+    .menu a,
+    p,
+    h2,
+    #homeImage {
+        padding-right: 10px;
+    }
+
+} 
+
+@media(max-width: 390px) {
+
+    #grid {
+        display: grid;
+        width: auto;
+        margin: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #page {
+        position: relative;
+        padding-top: 100px;
+        padding-left: 10px;
+        left: 0;
+    }
+
+    #noThanksImage {
+        padding: 0px 0px;
+        width: 390px;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .menu a {
+        padding: 5px 10px;
+    }
+      
+    nav {
+        padding: 16px 16px;
+    }
+
+}
+
+@media(max-width: 414px) {
+
+    #grid {
+        display: grid;
+        width: auto;
+        margin: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #page {
+        position: relative;
+        padding-top: 100px;
+        padding-left: 10px;
+        left: 0;
+    }
+
+    #noThanksImage {
+        padding: 0px 0px;
+        width: 414px;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .menu a {
+        padding: 5px 10px;
+    }
+      
+    nav {
+        padding: 16px 16px;
+    }
+
+}
+
+@media(max-width: 540px) {
+
+    #grid {
+        display: grid;
+        width: auto;
+        margin: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #page {
+        position: relative;
+        padding-top: 100px;
+        padding-left: 10px;
+        left: 0;
+    }
+
+    #noThanksImage {
+        padding: 0px 0px;
+        width: 390px;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .menu a {
+        padding: 5px 10px;
+    }
+      
+    nav {
+        padding: 16px 16px;
+    }
+
+}
+
+@media(min-width: 901px) {
+    
+    .menu {
+        display: flex;
+    }
+
+    #page {
+        padding-left: 300px;
+    }
+
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+
+    #grid {
+        background-color: var(--light);
+        display: grid;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 80vw auto;
+        grid-template-rows: 35vh 35vh;
+        grid-gap: 0px;
+        grid-template-areas: 
+        "top" "top"
+        "bottomLeft" "bottomLeft";
+        border: none;
+    }
+    
+    .menu {
+        display: flex;
+        
+    }
+
+    .menu a {
+        color: var(--light)
+    }
+
+    #page {
+        padding-left: 15px;
+    }
+
+    p {
+        width: 95%;
+    }
+    
+}
