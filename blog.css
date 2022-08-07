@@ -1,0 +1,516 @@
+:root {
+    --primary: #Bc3Bff;
+    --light:#EEEEEE;
+    --dark:#212121;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+
+button {
+    color: var(--primary);
+    margin: 10px;
+    padding: 5px;
+}
+
+button a {
+    font-family: sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
+    border-bottom: 3px solid var(--primary);
+    height: 65px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    color: var(--dark);
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h3 {
+    padding-bottom: 10px;
+    
+}
+
+blockquote {
+    color: var(--primary)
+}
+
+footer {
+    background-color: var(--light);
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+body {
+    background-color: var(--light);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -16px;
+}
+
+.menu a {
+    color: #FFF;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+
+.menu a.is-active, .menu a:hover {
+    background-color: var(--primary);
+}
+
+#homeH1 {
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+#bogs {
+    color: var(--primary);
+}
+
+#page {
+    padding-top: 100px;
+    padding-left: 75px;
+    
+}
+
+#mySidebar {
+    padding-top: 150px;
+    padding-left: 50px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--light);
+    overflow-x: hidden;
+}
+
+#onlyCon {
+    height: 15px;
+    width: auto;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#grid {
+    background-color: var(--light);
+    display: grid;
+    width: 80vw;
+    margin: auto;
+    grid-template-columns: 70vw 35vw;
+    grid-template-rows: 45vh 40vh;
+    grid-gap: 25px;
+    grid-template-areas: 
+    "top" "top"
+    "bottomLeft" "bottomLeft";
+    border: none;
+    overflow-x: hidden;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 65px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 5%;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 5%;
+}
+
+.fa-linkedin {
+    background: #0072B1;
+    color: white;
+    border-radius: 5%;
+}
+
+@media(min-width: 320px) and (max-width: 389px) {
+
+    #homeImage,
+    p {
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+
+    #mySidebar.sidebar {
+        padding-top: 0px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+} 
+
+@media(max-width: 390px) {
+
+    body {
+        max-width: auto;
+    }
+
+    #grid {
+        display: grid;
+        width: auto;
+        margin: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #page {
+        position: relative;
+        padding-top: 100px;
+        padding-left: 10px;
+        left: 0;
+    }
+
+    #homeImage {
+        height: auto;
+        width: 365px;
+        padding-top: 35px;
+    }
+
+    #mySidebar {
+        padding-top: 100px;
+        padding-left: 50px;
+        height: 100%;
+        width: 200px;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: var(--light);
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0; 
+        position: relative;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        background-color: #111; 
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .menu {
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .menu a {
+        padding: 5px 5px;
+    }
+
+}
+
+@media(max-width: 414px) {
+
+    #grid {
+        display: grid;
+        width: auto;
+        margin: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #page {
+        position: relative;
+        padding-top: 100px;
+        padding-left: 10px;
+        left: 0;
+    }
+
+    #homeImage {
+        height: auto;
+        width: 365px;
+        padding-top: 35px;
+    }
+
+    #mySidebar {
+        padding-top: 0px;
+        padding-left: 50px;
+        height: 100%;
+        width: 200px;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: var(--light);
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0; 
+        position: relative;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        background-color: #111; 
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .menu {
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .menu a {
+        padding: 5px 10px;
+    }
+      
+    nav {
+        padding: 16px 16px;
+    }
+
+}
+
+@media(max-width: 540px) {
+
+    #grid {
+        display: grid;
+        width: auto;
+        margin: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #page {
+        position: relative;
+        padding-top: 100px;
+        padding-left: 10px;
+        left: 0;
+    }
+
+    #homeImage {
+        height: auto;
+        width: 365px;
+        padding-top: 35px;
+    }
+
+    #mySidebar {
+        padding-top: 0px;
+        padding-left: 50px;
+        height: 100%;
+        width: 200px;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: var(--light);
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0; 
+        position: relative;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        background-color: #111; 
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .menu {
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .menu a {
+        padding: 5px 10px;
+    }
+      
+    nav {
+        padding: 16px 16px;
+    }
+
+}
+
+@media(min-width: 901px) {
+  
+    .menu {
+        display: flex;
+    }
+
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+
+    #grid {
+        background-color: var(--light);
+        display: grid;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 70vw 15vw;
+        grid-template-rows: 38vh 25vh;
+        grid-gap: 25px;
+        grid-template-areas: 
+        "top" "top"
+        "bottomLeft" "bottomLeft";
+        border: none;
+    }
+
+    .menu {
+        display: flex;
+        
+    }
+
+    .menu a {
+        color: var(--light)
+    }
+    
+}
+
+@media(min-width: 901px) {
+
+    
+    #jan {
+        text-align: center;
+        color: whitesmoke;
+        
+    }
+    
+    #feb {
+        text-align: center;
+        color: whitesmoke;
+        
+    }
+    
+    #mar {
+        text-align: center;
+        color: black;
+        
+    }
+    
+    #apr {
+        text-align: center;
+        color: black;
+        
+    }
+    
+    #may {
+        text-align: center;
+        color: black;
+        
+    }
+    
+    #jun {
+        text-align: center;
+        color: black;
+        
+    }
+    
+    #jul {
+        text-align: center;
+        color: black;
+        
+    }
+
+}
