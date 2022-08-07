@@ -160,7 +160,6 @@ blockquote {
 
 @media(max-width: 390px) {
     
-    
     #grid {
         display: grid;
         width: auto;
