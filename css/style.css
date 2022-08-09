@@ -1,3 +1,7 @@
+@import "aboutMe.css";
+@import "blog.css";
+@import "contact.css";
+
 :root {
     --primary: #Bc3Bff;
     --light:#EEEEEE;
