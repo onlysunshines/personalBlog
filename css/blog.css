@@ -197,6 +197,13 @@ body {
     border-radius: 5%;
 }
 
+@media(min-width: 912px) {
+
+    #grid {
+        padding-top: 100px;
+    }
+}
+
 @media(min-width: 320px) and (max-width: 389px) {
 
     #homeImage,
