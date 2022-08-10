@@ -198,6 +198,58 @@ footer {
     border-radius: 5%;
 }
 
+@media(min-width: 912px) {
+
+    #page {
+        padding: 0px;
+    }
+
+    #mySidebar {
+        margin-right: 0px;
+        padding-top: 100px;
+        padding-left: 5px;
+        height: 100%;
+        width: 20px;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: var(--light);
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0; 
+        position: relative;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        background-color: #111; 
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .menu {
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .menu a {
+        padding: 5px 10px;
+    }
+}
+
 @media(max-width: 280px) {
 
     #page {
